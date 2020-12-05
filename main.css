@@ -1,0 +1,264 @@
+/*Good CSS Architecture:
+    HTML Elements
+    Targeted classes with class names
+    Targeted specifics with id names
+    Previously styled elements that are being overriden*/
+
+    /*Common elements*/
+    body{
+        font-size: 70%;
+        font-family: 'Merienda One', cursive;
+        background:rgb(18, 214, 228)  url(https://wallpapercave.com/wp/wp5454911.jpg) no-repeat fixed top center;
+        padding: 0;
+        margin:0;
+        background-size: 100% 100%;
+    }
+    p{
+        font-family: 'Merienda One', cursive;
+        font-size: 1.2em;
+        line-height: 1.4em;
+        color: #6347ff;
+        padding: 0px;
+        margin: 0px 0.5em 0.75em 0px;
+    }
+
+    ul{
+        font-family: 'Merienda One', cursive;
+        font-size: 1.2em;
+        margin: 0 0 0 1.0em;
+        padding: 0 0 0 1.0em;
+    }
+
+    ul li{
+        margin: 0;
+        padding: 0 0 0 0.2em;
+    }
+
+    a, a:visited{
+        color:#6347ff;
+    }
+
+    a:hover{
+        color:pink;
+    }
+
+    /*horizontal rule*/
+    hr{
+        padding: 0;
+        margin: 1.5em 1.5em 0.75em 0.5em;
+    }
+
+    .wrapper{
+        margin: 0 auto;
+        max-width: 1170px;
+        padding: 0 3.0em;
+    }
+   
+
+    /*Header*/
+    header{
+        padding: 2.5em 0 0.5em;
+        margin: 0 0 2.0em;
+        background: transparent center 0px;
+    }
+
+    header h1{
+        font-family: 'Merienda One', cursive;
+        color:darkorchid;
+        font-size: 12;
+        letter-spacing: 0.05em;
+        margin: 0;
+        text-shadow: 1px 2px 0 #bd8437;
+    }
+    header h2{
+        font-family: 'Merienda One', cursive;
+        color:darkorchid;
+        font-size: 12;
+        letter-spacing: 0.05em;
+        margin: 0;
+        text-shadow: 1px 2px 0 #bd8437;
+    }
+    .DbTitle
+    {
+        position: absolute;
+        margin-left: 75em;
+        margin-top: .05em;
+    }
+
+
+
+    /*Nav Bars*/
+    nav ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    nav li{
+        display: inline-block;
+        margin: 0;
+        height: 1em;
+    }
+
+    nav li a, nav li a:visted {
+        text-decoration: none;
+        color: #6347ff;
+        padding: 0.3em 0.6em;
+    }
+
+    nav li a:hover{
+        color:pink;
+        background-color:#6347ff;
+    }
+
+    nav#utilityMenu{
+        font-family: 'Merienda One', cursive;
+        float: right;
+        margin: -1.5em 0 0 0;
+        padding: 2px 2px 2px 2px;
+        background-color:rgb(18, 214, 228);
+        height: 2.3em;
+    }
+
+    nav#utilityMenu ul li.acctNav a:hover{
+        background-color: whitesmoke;
+        color: violet;
+    }
+
+
+    nav#utilityMenu ul li.acctNav::before, nav#utilityMenu ul li input#search::before
+    {
+        content: "| ";
+        color:whitesmoke;
+    }
+
+
+
+    /*Sidebar Section*/
+    section#sidebar{
+        font-family: 'Merienda One', cursive;
+        width: 175px;
+        float: left;
+        position: relative;
+        display: block;
+        background-color: violet;
+        margin: 1.5em 0 3.0em 1.5em;
+        padding: 1.8em 0.4em 2.8em 1.5em;
+        border-right:#6347ff solid 10px;
+    }
+
+    
+    /* Main Section*/
+
+    section #main{
+        margin: 0 0 2.0em;
+        padding: 1.5em 0 2.0em 1.5em;
+        display: inline-block;
+        border-radius: 2em;
+        box-shadow: 1px 1px 10px #333; /*offset-x | offset-y | blur radius | color*/
+    } 
+    
+   .panel{
+        display: inline-block;
+        height: 650px;
+        width: 350px;
+        margin: .05em 2em 2em 1em;
+        padding: 1.0em;
+        background-color: rgb(18, 214, 228);
+        border: #6347ff solid 10px;
+        border-radius: 4em;
+    }
+
+    section div.panel img.interiorType{
+        width: 100%;
+        height: 75%;
+        padding: 4px 0 4px;
+        border-radius: 4em;
+    }
+
+    /*Footer*/
+    footer{
+        background-color: rgb(18, 214, 228);
+        height: 25px;
+        font-size: 1.2em;
+        color: whitesmoke;
+        text-align: center;
+        padding: 1.5em 2.0em;
+    }
+
+    footer ul#footerMenu{
+        display: inline-block;
+        list-style: none;
+        margin: 0 0 0 0.5em;
+        padding: 0;
+    }
+
+    footer ul li{
+        display: inline-block;
+        padding: 0 0.7em 0 0;
+        margin: 0;
+    }
+
+    footer ul li::before{
+        content: "| ";
+        padding-right: 0.7em;
+    }
+
+    footer a, footer a:visted{
+        color: fuchsia;
+        text-decoration: none;
+    }
+
+    footer a:hover{
+        color:#6347ff;
+        text-decoration: underline;
+    }
+    /*Buttons*/
+    button{
+        color: whitesmoke;
+        background-color: violet;
+        display: inline-block;
+        margin: 0 0.45em 0 0;
+        padding: 0.2em 0.5em;
+        border: 1px solid #6347ff;
+        text-transform: uppercase;
+    }
+
+    button:hover{
+        background-color: #6347ff;
+        border: 1px solid whitesmoke;
+    }
+
+    /*lets try the drop buttons*/
+    
+    .dropdown{
+        position: relative;
+        display: inline-block;
+    }
+
+    
+
+    .dropdown-content{
+        display: none;
+        position: absolute;
+        background-color: #6347ff;
+        min-width: 140px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    
+
+
+    .dropdown-content a{
+        color: whitesmoke;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    .dropdown-content a:hover {background-color: #12d6e4}
+
+    .dropdown:hover .dropdown-content{
+        display: block;
+    }
+
